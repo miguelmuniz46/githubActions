@@ -14,10 +14,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '26'
 
       - name: Install Dependencies
-        run: npm install --save-dev mocha
+        run: npm install
 
       - name: Run Tests
         run: npx mocha pruebas.mjs
